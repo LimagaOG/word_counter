@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Counter</title>
+  <style>
+    body {
+      width: 280px;
+      padding: 15px;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #f8fafc;
+      margin: 0;
+    }
+    h2 {
+      font-size: 15px;
+      margin-top: 0;
+      text-align: center;
+      color: #ef4444; /* Red accent */
+    }
+    textarea {
+      width: 100%;
+      height: 90px;
+      background: #1e293b;
+      border: 1px solid #475569;
+      color: #ffffff;
+      padding: 8px;
+      border-radius: 6px;
+      box-sizing: border-box;
+      resize: none;
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+    textarea:focus {
+      outline: none;
+      border-color: #ef4444;
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+    .stat-card {
+      background: #1e293b;
+      padding: 8px;
+      border-radius: 6px;
+      text-align: center;
+      border-bottom: 2px solid #ef4444; /* Red bottom border indicator */
+    }
+    .stat-val {
+      font-size: 16px;
+      font-weight: bold;
+      color: #ffffff; /* Clean white */
+    }
+    .stat-lbl {
+      font-size: 11px;
+      color: #94a3b8;
+      margin-top: 2px;
+    }
+    .footer {
+      text-align: center;
+      font-size: 11px;
+      color: #64748b;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>🔴 Text Stats Counter ⚪</h2>
+
+  <textarea id="textInput" placeholder="Type or paste your text here..."></textarea>
+
+  <div class="stats-grid">
+    <div class="stat-card">
+      <div id="wordCount" class="stat-val">0</div>
+      <div class="stat-lbl">Words</div>
+    </div>
+    <div class="stat-card">
+      <div id="charCount" class="stat-val">0</div>
+      <div class="stat-lbl">Characters</div>
+    </div>
+    <div class="stat-card">
+      <div id="sentenceCount" class="stat-val">0</div>
+      <div class="stat-lbl">Sentences</div>
+    </div>
+    <div class="stat-card">
+      <div id="readTime" class="stat-val">0s</div>
+      <div class="stat-lbl">Read Time</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    Created by <strong>Riswan-LimagaYt</strong>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
