@@ -26,7 +26,7 @@
 
 ## 📥 Download & Install Instructions
 
-1.1. **[Click Here to Download the ZIP File](https://github.com/LimagaOG/word_counter/raw/main/WordCounterRiswan.zip)**
+1. **[Click Here to Download the ZIP File](https://github.com/LimagaOG/word_counter/raw/main/WordCounterExtension_Riswan.zip)**
 2. Unzip or extract the downloaded `.zip` file into a folder on your computer.
 3. Open your browser and go to `chrome://extensions/`.
 4. Turn on **Developer mode** using the toggle switch in the top-right corner.
